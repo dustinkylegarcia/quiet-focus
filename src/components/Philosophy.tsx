@@ -4,23 +4,23 @@ const principles = [
   {
     number: "01",
     title: "Intention over impulse",
-    description: "Every interaction begins with purpose. Technology serves you, not the other way around.",
+    description: "Technology serves you, not the other way around.",
   },
   {
     number: "02", 
     title: "Space to think",
-    description: "Silence is not emptiness. In the quiet, clarity emerges naturally.",
+    description: "In the quiet, clarity emerges.",
   },
   {
     number: "03",
     title: "Depth over breadth",
-    description: "Choose fewer things. Engage with them fully. This is where meaning lives.",
+    description: "Choose fewer things. Engage fully.",
   },
 ];
 
 export const Philosophy = () => {
   return (
-    <section id="philosophy" className="py-24 md:py-32 lg:py-40">
+    <section id="philosophy" className="py-32 md:py-44 lg:py-56">
       <div className="container">
         <FadeIn>
           <p className="text-sm tracking-wide text-muted-foreground mb-4">
