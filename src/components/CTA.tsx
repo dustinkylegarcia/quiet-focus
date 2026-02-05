@@ -1,5 +1,6 @@
 import { FadeIn } from "./ui/FadeIn";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const CTA = () => {
   return (
@@ -19,14 +20,18 @@ export const CTA = () => {
           </FadeIn>
           
           <FadeIn delay={0.2}>
-            <motion.button
+            <motion.div
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground text-sm font-medium tracking-wide rounded hover:bg-primary/90 transition-colors duration-400"
+              transition={{ duration: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
             >
-              Start your practice
-            </motion.button>
+              <Link
+                to="/focus"
+                className="inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground text-sm font-medium tracking-wide rounded hover:bg-primary/90 transition-colors duration-500"
+              >
+                Start your practice
+              </Link>
+            </motion.div>
           </FadeIn>
           
           <FadeIn delay={0.3}>
