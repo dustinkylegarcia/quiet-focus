@@ -13,11 +13,11 @@ export const FadeIn = ({
   children,
   className = "",
   delay = 0,
-  duration = 0.6,
-  y = 24,
+  duration = 1,
+  y = 8,
 }: FadeInProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const isInView = useInView(ref, { once: true, margin: "-30px" });
 
   return (
     <motion.div
@@ -27,7 +27,7 @@ export const FadeIn = ({
       transition={{
         duration,
         delay,
-        ease: [0.16, 1, 0.3, 1],
+        ease: [0.25, 0.1, 0.25, 1],
       }}
       className={className}
     >
@@ -39,14 +39,14 @@ export const FadeIn = ({
 export const FadeInStagger = ({
   children,
   className = "",
-  staggerDelay = 0.1,
+  staggerDelay = 0.08,
 }: {
   children: ReactNode;
   className?: string;
   staggerDelay?: number;
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const isInView = useInView(ref, { once: true, margin: "-30px" });
 
   return (
     <motion.div
@@ -78,13 +78,13 @@ export const FadeInChild = ({
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 0, y: 6 },
         visible: {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 0.5,
-            ease: [0.16, 1, 0.3, 1],
+            duration: 0.9,
+            ease: [0.25, 0.1, 0.25, 1],
           },
         },
       }}
