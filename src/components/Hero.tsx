@@ -19,8 +19,8 @@ export const Hero = () => {
           </FadeIn>
           
           <FadeIn delay={0.35}>
-            <p className="body-lg max-w-xl mb-10 md:mb-14">
-              A space to reclaim your attention and cultivate intentional focus in a distracted world.
+            <p className="body-lg max-w-md mb-10 md:mb-14">
+              Reclaim your attention. Cultivate focus.
             </p>
           </FadeIn>
           

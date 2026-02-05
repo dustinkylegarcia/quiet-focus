@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const CTA = () => {
   return (
-    <section className="py-24 md:py-32 lg:py-40 bg-secondary/30">
+    <section className="py-32 md:py-44 lg:py-56 bg-secondary/30">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
@@ -13,8 +13,8 @@ export const CTA = () => {
           </FadeIn>
           
           <FadeIn delay={0.1}>
-            <p className="body-base mb-10 md:mb-14 max-w-md mx-auto">
-              Take the first step toward intentional living. No account needed.
+            <p className="body-base mb-10 md:mb-14 max-w-sm mx-auto">
+              No account needed.
             </p>
           </FadeIn>
           
@@ -31,7 +31,7 @@ export const CTA = () => {
           
           <FadeIn delay={0.3}>
             <p className="text-xs text-muted-foreground/60 mt-6">
-              Free. No distractions. Ever.
+              Free. Always.
             </p>
           </FadeIn>
         </div>

@@ -2,8 +2,8 @@ import { FadeIn } from "./ui/FadeIn";
 
 export const Footer = () => {
   return (
-    <footer className="py-12 md:py-16">
-      <div className="section-divider mb-12 md:mb-16" />
+    <footer className="py-16 md:py-24">
+      <div className="section-divider mb-16 md:mb-20" />
       
       <div className="container">
         <FadeIn>
