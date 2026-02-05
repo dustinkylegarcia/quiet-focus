@@ -126,11 +126,11 @@
 
 @layer utilities {
   .heading-xl {
-    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-[1.1];
+    @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extralight tracking-tighter leading-[1.05];
   }
 
   .heading-lg {
-    @apply text-2xl sm:text-3xl md:text-4xl font-light tracking-tight leading-[1.2];
+    @apply text-2xl sm:text-3xl md:text-4xl font-extralight tracking-tight leading-[1.15];
   }
 
   .heading-md {
@@ -138,11 +138,11 @@
   }
 
   .body-lg {
-    @apply text-lg sm:text-xl font-light leading-relaxed text-muted-foreground;
+    @apply text-lg sm:text-xl font-light leading-relaxed text-muted-foreground/80;
   }
 
   .body-base {
-    @apply text-base font-light leading-relaxed text-muted-foreground;
+    @apply text-base font-light leading-relaxed text-muted-foreground/80;
   }
 }
 
