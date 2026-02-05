@@ -1,0 +1,41 @@
+import { FadeIn } from "./ui/FadeIn";
+import { motion } from "framer-motion";
+
+export const CTA = () => {
+  return (
+    <section className="py-24 md:py-32 lg:py-40 bg-secondary/30">
+      <div className="container">
+        <div className="max-w-2xl mx-auto text-center">
+          <FadeIn>
+            <h2 className="heading-md text-foreground mb-6 text-balance">
+              Ready to begin?
+            </h2>
+          </FadeIn>
+          
+          <FadeIn delay={0.1}>
+            <p className="body-base mb-10 md:mb-14 max-w-md mx-auto">
+              Take the first step toward intentional living. No account needed.
+            </p>
+          </FadeIn>
+          
+          <FadeIn delay={0.2}>
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground text-sm font-medium tracking-wide rounded hover:bg-primary/90 transition-colors duration-400"
+            >
+              Start your practice
+            </motion.button>
+          </FadeIn>
+          
+          <FadeIn delay={0.3}>
+            <p className="text-xs text-muted-foreground/60 mt-6">
+              Free. No distractions. Ever.
+            </p>
+          </FadeIn>
+        </div>
+      </div>
+    </section>
+  );
+};
