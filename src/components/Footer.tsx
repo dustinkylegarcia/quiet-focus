@@ -9,7 +9,7 @@ export const Footer = () => {
         <FadeIn>
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <p className="text-sm text-muted-foreground">
-              stillness — a practice in presence
+              stillness
             </p>
             
             <p className="text-xs text-muted-foreground/60">

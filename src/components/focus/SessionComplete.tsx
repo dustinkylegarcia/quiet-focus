@@ -12,13 +12,13 @@ export const SessionComplete = ({ intention, duration, onReset }: SessionComplet
     <div className="text-center">
       <FadeIn>
         <p className="text-sm tracking-wide text-muted-foreground/60 mb-6">
-          Session complete
+          Done
         </p>
       </FadeIn>
 
       <FadeIn delay={0.1}>
         <h2 className="heading-lg text-foreground mb-8 text-balance">
-          Well done.
+          That's {duration} minutes.
         </h2>
       </FadeIn>
 
@@ -31,12 +31,6 @@ export const SessionComplete = ({ intention, duration, onReset }: SessionComplet
       )}
 
       <FadeIn delay={0.3}>
-        <p className="text-sm text-muted-foreground/50 mb-16">
-          {duration} minutes of focus
-        </p>
-      </FadeIn>
-
-      <FadeIn delay={0.4}>
         <motion.button
           onClick={onReset}
           whileHover={{ scale: 1.02 }}
@@ -44,7 +38,7 @@ export const SessionComplete = ({ intention, duration, onReset }: SessionComplet
           transition={{ duration: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
           className="inline-flex items-center gap-3 text-foreground group"
         >
-          <span className="text-sm font-medium tracking-wide">Begin again</span>
+          <span className="text-sm font-medium tracking-wide">Again</span>
           <span className="w-8 h-px bg-foreground/30 group-hover:w-12 group-hover:bg-primary transition-all duration-500" />
         </motion.button>
       </FadeIn>

@@ -3,18 +3,18 @@ import { FadeIn, FadeInStagger, FadeInChild } from "./ui/FadeIn";
 const principles = [
   {
     number: "01",
-    title: "Intention over impulse",
-    description: "Technology serves you, not the other way around.",
+    title: "Choose, don't react",
+    description: "Let technology wait for you.",
   },
   {
     number: "02", 
-    title: "Space to think",
-    description: "In the quiet, clarity emerges.",
+    title: "Make room",
+    description: "Quiet is where clarity lives.",
   },
   {
     number: "03",
-    title: "Depth over breadth",
-    description: "Choose fewer things. Engage fully.",
+    title: "Go deeper",
+    description: "Fewer things, fully felt.",
   },
 ];
 
@@ -24,13 +24,13 @@ export const Philosophy = () => {
       <div className="container">
         <FadeIn>
           <p className="text-sm tracking-wide text-muted-foreground mb-4">
-            Philosophy
+            How we see it
           </p>
         </FadeIn>
         
         <FadeIn delay={0.1}>
           <h2 className="heading-lg text-foreground mb-16 md:mb-24 max-w-2xl text-balance">
-            Attention is finite. Guard it well.
+            Your attention is yours.
           </h2>
         </FadeIn>
         
