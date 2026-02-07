@@ -9,13 +9,13 @@ export const IntentionInput = ({ value, onChange }: IntentionInputProps) => {
   return (
     <FadeIn delay={0.1} className="w-full max-w-md mx-auto">
       <label className="block text-xs text-muted-foreground/60 mb-4 text-center tracking-wide">
-        What will you focus on?
+        What's this time for?
       </label>
       <input
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder="Your intention..."
+        placeholder="Optional"
         maxLength={100}
         className="
           w-full bg-transparent border-0 border-b border-border

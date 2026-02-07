@@ -9,13 +9,13 @@ export const CTA = () => {
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
             <h2 className="heading-md text-foreground mb-6 text-balance">
-              Ready to begin?
+              Try it now
             </h2>
           </FadeIn>
           
           <FadeIn delay={0.1}>
             <p className="body-base mb-10 md:mb-14 max-w-sm mx-auto">
-              No account needed.
+              Nothing to sign up for.
             </p>
           </FadeIn>
           
@@ -29,14 +29,14 @@ export const CTA = () => {
                 to="/focus"
                 className="inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground text-sm font-medium tracking-wide rounded hover:bg-primary/90 transition-colors duration-500"
               >
-                Start your practice
+                Start a session
               </Link>
             </motion.div>
           </FadeIn>
           
           <FadeIn delay={0.3}>
             <p className="text-xs text-muted-foreground/60 mt-6">
-              Free. Always.
+              Always free.
             </p>
           </FadeIn>
         </div>

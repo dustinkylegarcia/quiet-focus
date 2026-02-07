@@ -72,7 +72,7 @@ const Focus = () => {
             <div className="space-y-16 sm:space-y-20">
               <FadeIn>
                 <h1 className="heading-lg text-foreground text-center text-balance">
-                  Focus session
+                  Set a timer
                 </h1>
               </FadeIn>
 
