@@ -22,12 +22,19 @@ interface UseFocusSessionReturn {
 }
 
 const STORAGE_KEY = "stillness-focus-session";
+const DURATION_KEY = "stillness-last-duration";
 
 export const useFocusSession = (): UseFocusSessionReturn => {
   const [state, setState] = useState<SessionState>("idle");
   const [intention, setIntention] = useState("");
-  const [selectedDuration, setSelectedDuration] = useState(25);
-  const [timeRemaining, setTimeRemaining] = useState(25 * 60);
+  const [selectedDuration, setSelectedDuration] = useState(() => {
+    const saved = localStorage.getItem(DURATION_KEY);
+    return saved ? parseInt(saved, 10) : 25;
+  });
+  const [timeRemaining, setTimeRemaining] = useState(() => {
+    const saved = localStorage.getItem(DURATION_KEY);
+    return saved ? parseInt(saved, 10) * 60 : 25 * 60;
+  });
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const totalSeconds = selectedDuration * 60;
@@ -125,6 +132,7 @@ export const useFocusSession = (): UseFocusSessionReturn => {
     selectedDuration,
     setSelectedDuration: (minutes: number) => {
       setSelectedDuration(minutes);
+      localStorage.setItem(DURATION_KEY, minutes.toString());
       if (state === "idle") {
         setTimeRemaining(minutes * 60);
       }
